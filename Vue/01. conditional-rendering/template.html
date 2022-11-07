@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <title>Vue JS Light Bulb</title>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="row txt-center">
+
+        <div v-if="program == 'bulb off'" class="col hyt-300 bg-clr-black clr-white">
+          <img src="/images/bulb_off.jpeg">
+        </div>
+
+        <div v-else="program == 'bulb on'" class="col hyt-300 bg-color-purple clr-white">
+          <img src="/images/bulb_on.jpeg">
+        </div>
+
+        <p>
+          <button class="button" type="button" >ON</button>
+          <button class="button2" type="button" onclick="light(0)">OFF</button>
+        </p>
+
+      </div>
+    </div>
+  </div> 
+    
+    <script src="../../scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="../../scripts/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
